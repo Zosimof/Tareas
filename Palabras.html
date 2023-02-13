@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2023 by anonymous (http://jsbin.com/sijoxireli/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+
+var palabra1 = prompt("Ingrese palabra 1:");
+var palabra2 = prompt("Ingrese palabra 2:");
+var vos1 = palabra1.length;
+alert("La primer palabra tiene " + vos1 +" caracteres.");
+var vos2 = palabra2.length;
+alert("La segunda palabra tiene " + vos2 +" caracteres.");
+
+var orden = [palabra1, palabra2];
+
+if (vos1 > vos2) {
+  alert("La palabra " + palabra1 + " es mas extensa!");
+} else if (vos1 < vos2) {
+  alert("La palabra " + palabra2 + " es mas extensa!");
+}
+else alert ("Las palabras tienen la misma longitud!");
+
+alert ("El orden alfabetico es " + orden.sort());
+
+if (vos1 < vos2) {
+  alert("La palabra corta en mayusculas es " + palabra1.toUpperCase());
+} else if (vos1 > vos2) {
+  alert("La palabra corta en mayusculas es " + palabra2.toUpperCase());
+}
+else alert ("las palabras en mayuscula son " + palabra1.toUpperCase() + " y " + palabra2.toUpperCase());
+
+alert("Luis Roberto Lopez Arenas 23002633");
+
+
+
+ 
+</script>
+</body>
+</html>
